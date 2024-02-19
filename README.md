@@ -8,11 +8,11 @@ Testez le code `game_target_v3.py`.
 Pour chaque Version, vous devrez :
 
 1. **Coder la ou les classes et le package associé et le déposer sur test Pypi** : cela doit être accessible sur la branche principale de votre projet.
-1. **Mettre en place une logique de test, le plus exhaustif possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
-1. **Afficher les choix sur le code final de la classe** : après diverses corrections liées aux retours de Pylint. Affichez votre score et le retour de Pylint.
+1. **Mettre en place une logique de test, le plus complet possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
+1. **Afficher les choix sur le code final de la classe si vous avez du faire des changements** : après diverses corrections liées aux retours de Pylint. Affichez votre score et le retour de Pylint.
 2. **Associer au projet gitlab le README le plus complet possible**
 1. **Faire un gros effort sur les commentaires** : utilisez intensivement les docstrings.
-1. **Tester l'instalaltion du paquet à partir de gitlab avec une procedure dans le README** (1).
+1. **Tester l'installation du paquet à partir de gitlab avec une procedure dans le README** (1).
 1. **Automatiser les phases de test et de création du .whl sur GitLab avec un fichier ci** (2).
 1. Faire apparaitre votre arbe de commit dans le README, en expliquant les choix faitrs surt les branches et les tags
 
