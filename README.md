@@ -12,7 +12,7 @@ Pour chaque Version, vous devrez :
 
 1. ***Expliquer ce qui marche et ce qui ne marche pas***
 1. ***Joindre des copies d'écran, du résultats des scripts exécutés***
-1. **Expliquer l'usage de venv, dans votre cas, ne pas joindre de repertoire Venv dans votre git**
+1. **Expliquer l'usage de venv, dans votre cas (NE PAS JOINDRE DE REPERTOIRE Venv dans votre git ou de fichiers temporaires)**
 1. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
 1. **Mettre en place une logique de test, le plus complet possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
 1. **Afficher les choix sur le code final de la classe si vous avez dû faire des changements** :  Affichez votre score et le retour de Pylint.
