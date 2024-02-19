@@ -10,16 +10,16 @@ Même si rien ne marche, remplissez au mieux les attendus en étant clair sur ce
 
 Pour chaque Version, vous devrez :
 
-1.***Expliquer ce qui marche et ce qui ne marche pas***
+1. ***Expliquer ce qui marche et ce qui ne marche pas***
 1 ***Joindre des copies d'écran, du résultats des scripts exécutés***
 1. **Expliquer l'usage de venv, dans votre cas, ne pas joindre de repertoire Venv dans votre git**
 1. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
 1. **Mettre en place une logique de test, le plus complet possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
 1. **Afficher les choix sur le code final de la classe si vous avez dû faire des changements** :  Affichez votre score et le retour de Pylint.
-2. **Associer au projet gitlab le README le plus complet possible**
+1. **Associer au projet gitlab le README le plus complet possible**
 1. **Faire un gros effort sur les commentaires** : utilisez intensivement les docstrings.
 1. **Proposer l'installation du paquet à partir de gitlab avec une procedure dans le README**
-2.  **Proposer l'installation du paquet à partir de test pypi avec une procédure dans le README**
+1.  **Proposer l'installation du paquet à partir de test pypi avec une procédure dans le README**
 1. **Automatiser les phases de test et de création du .whl sur GitLab avec un fichier ci** 
 1. Faire apparaitre votre arbre de commit dans le README, en expliquant les choix faits sur les branches et les tags
 
