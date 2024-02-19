@@ -25,7 +25,7 @@ Le but est de mettre en forme le code donné pour en créer un package en modifi
 ### Version 2
 
 Le code proposé présente beaucoup d'amélioraiton possibles . En particulier, le fait de modifier directement la grille (grid) sans passer par une méthode qui apporterait des sécurités est problématique . 
-Ensuite le fait que le  code suivant ne genere pas d'erreur est problematique 
+Ensuite le fait que le  code suivant ne genere pas d'erreur est aussi problematique 
 ```python
 if __name__ == "__main__":
 
