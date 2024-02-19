@@ -7,7 +7,7 @@ Testez le code `game_target_v3.py`.
 
 Pour chaque Version, vous devrez :
 
-1. **Coder la ou les classes et le package associé et le déposer sur test Pypi** : cela doit être accessible sur la branche principale de votre projet.
+1. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
 1. **Mettre en place une logique de test, le plus complet possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
 1. **Afficher les choix sur le code final de la classe si vous avez du faire des changements** : après diverses corrections liées aux retours de Pylint. Affichez votre score et le retour de Pylint.
 2. **Associer au projet gitlab le README le plus complet possible**
