@@ -9,7 +9,7 @@ Dans le cas ou le sujet ne vous paraitrez peu clair ou erronné, proposez des ch
 Même si rien ne marche, remplissez au mieux les attendus en étant clair sur ce qui marche et ce qui ne marche pas (cf la suite)
 
 > [!IMPORTANT] 
-> Soyez clair dans le README de votre main du rendu principal, où je dois trouver les differentes versions , idéallement pointé dessus 
+> Soyez clair dans le README de votre main du rendu principal, où je dois trouver les differentes versions attendus
 
 Pour chaque Version, vous devrez :
 
