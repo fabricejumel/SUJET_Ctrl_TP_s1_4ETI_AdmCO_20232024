@@ -7,9 +7,10 @@ Testez le code `game_target_v3.py`.
 
 Pour chaque Version, vous devrez :
 
-1. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
+1. **Expliquer l'usage de venv, dans votre cas, ne pas joindre de repertoire Venv dans votre git**
+2. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
 1. **Mettre en place une logique de test, le plus complet possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
-1. **Afficher les choix sur le code final de la classe si vous avez du faire des changements** : après diverses corrections liées aux retours de Pylint. Affichez votre score et le retour de Pylint.
+1. **Afficher les choix sur le code final de la classe si vous avez dû faire des changements** :  Affichez votre score et le retour de Pylint.
 2. **Associer au projet gitlab le README le plus complet possible**
 1. **Faire un gros effort sur les commentaires** : utilisez intensivement les docstrings.
 1. **Tester l'installation du paquet à partir de gitlab avec une procedure dans le README** (1).
@@ -17,33 +18,39 @@ Pour chaque Version, vous devrez :
 1. Faire apparaitre votre arbe de commit dans le README, en expliquant les choix faitrs surt les branches et les tags
 
 
-### Version 0
+### Version 1
 
-Le but est de mettre en forme le code donné pour en créer un package q
+Le but est de mettre en forme le code donné pour en créer un package en modifiant a minima le code donné (même si il vous semble incorrect ou peu pertinent)
 
-- Créez un package `Game`.donné 
-- Proposez un module `RPS_Game`.
-- Créez un sous-module `RPS_Tools` contenant une classe :
-  - Créez une classe `RPS_SimpleGame`.
+### Version 2
 
-#### RPS_SimpleGame
+Le code proposé présente beaucoup d'amélioraiton possibles . En particulier, le fait de modifier directement la grille (grid) sans passer par une méthode qui apporterait des sécurités est problématique . 
+Ensuite le fait que le  code suivant ne genere pas d'erreur est problematique 
+```python
+if __name__ == "__main__":
 
-Cette classe propose deux méthodes :
+    # Création de la grille et du robot
+    grid = Grid(5, 5)
+    robot = Robot(10, 10)
 
-1. `SimplegameTwoplayers(player1choice, player2choice)` : retourne 0 en cas d'égalité, 1 si le joueur 1 gagne et 2 si le joueur 2 gagne.
-2. `SimplegameOneplayer(player1choice)` : retourne 0 en cas d'égalité (même choix aléatoire fait par l'ordinateur), 1 si le joueur gagne ou 2 si l'ordinateur gagne.
-   - `player1choice` et `player2choice` sont des caractères 'R', 'P' ou 'S'.
+    # Création du jeu avec l'option d'affichage de la grille et une limite d'étapes
+    game = Game(grid, robot, max_steps=1000, show_grid=False)
 
-### Fonctionnalité 2
+    # Exécution des tours de jeu jusqu'à ce que le robot touche la cible ou que la limite d'étapes soit dépassée
+    while not game.run_turn():
+        pass
 
-Créez une seconde classe `RPS_MultipleGame`. Dans cette classe, un joueur humain joue contre l'ordinateur en gardant une trace des parties précédentes. Cette classe utilisera la classe `RPS_SimpleGame`, plus précisément la méthode `SimplegameTwoplayers`. On souhaite stocker (à vous de définir comment) à la fois les anciennes parties pour analyse et avoir un historique récent pour la prise de décision. Il peut être pertinent d'associer les parties à des joueurs "identifiés".
+    # Vérification si le robot a atteint la cible ou non et affichage du message approprié
+    if game.target_reached:
+        print("Félicitations ! Le robot a atteint la cible en {} étapes.".format(game.steps))
+    else:
+        print("Le robot n'a pas réussi à atteindre la cible dans le nombre maximum d'étapes.")
+```
+Proposer des correctifs de ces problèmes et d'autres problème que vous auriez constaté . Il est imporrtant que tous les changements se reperercutent sur les tests unitaires . N'hésitez pas à améliorer au passage vos tests unitaires si il n'était pas suffisemment complet sur la version 1.
 
-### Fonctionnalité 3
+### Version 3
 
-L'ordinateur pourra alors utiliser l'historique des parties précédentes pour proposer une stratégie non aléatoire. Faites une proposition de structuration de code. Vous pourrez proposer une ou plusieurs stratégies qui utilisent cet historique.
+On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie aléatoires , 2 autres stratégies (qui peuvent aussi ou pas comporter une part d'aléatoire). 
 
----
-**Note**:
 
-- Assurez-vous de créer des fichiers README.md pour chaque branche ou fonctionnalité, expliquant clairement les changements et la logique derrière eux.
-- Utilisez des outils d'intégration continue pour automatiser les tests et la génération de fichiers `.whl`.
+
