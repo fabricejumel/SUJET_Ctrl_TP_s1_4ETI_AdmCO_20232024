@@ -7,6 +7,7 @@ Testez le code [game_target_v3.py](./game_target_v3.py)
 
 Dans le cas ou le sujet ne vous paraitrez peu clair ou erronné, proposez des changements en les justifiant pour pouvoir répondre aux questions .
 Même si rien ne marche, remplissez au mieux les attendus en étant clair sur ce qui marche et ce qui ne marche pas (cf la suite)
+
 Soyez clair dans le README de votre main du rendu principal, où je dois trouver les differentes versions , idéallement pointé dessus 
 
 Pour chaque Version, vous devrez :
