@@ -5,7 +5,7 @@ Votre rendu sera un unique dépôt Git. Vous devrez définir et justifier l'orga
 
 Testez le code [game_target_v3.py](./game_target_v3.py)
 
-Dans le cas ou le sujet ne vous paraitrez pas clair ou erronné, proposez des changements en les justifiant pour pouvoir répondre aux questions .
+Dans le cas ou le sujet ne vous paraitrez peu clair ou erronné, proposez des changements en les justifiant pour pouvoir répondre aux questions .
 Même si rien ne marche, remplissez au mieux les attendus en étant clair sur ce qui marche et ce qui ne marche pas (cf la suite)
 
 Pour chaque Version, vous devrez :
