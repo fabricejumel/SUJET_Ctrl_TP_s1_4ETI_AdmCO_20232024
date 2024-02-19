@@ -11,7 +11,7 @@ Même si rien ne marche, remplissez au mieux les attendus en étant clair sur ce
 Pour chaque Version, vous devrez :
 
 1. ***Expliquer ce qui marche et ce qui ne marche pas***
-1 ***Joindre des copies d'écran, du résultats des scripts exécutés***
+1. ***Joindre des copies d'écran, du résultats des scripts exécutés***
 1. **Expliquer l'usage de venv, dans votre cas, ne pas joindre de repertoire Venv dans votre git**
 1. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
 1. **Mettre en place une logique de test, le plus complet possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
