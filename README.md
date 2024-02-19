@@ -15,7 +15,7 @@ Pour chaque Version, vous devrez :
 1. **Faire un gros effort sur les commentaires** : utilisez intensivement les docstrings.
 1. **Tester l'installation du paquet à partir de gitlab avec une procedure dans le README** (1).
 1. **Automatiser les phases de test et de création du .whl sur GitLab avec un fichier ci** (2).
-1. Faire apparaitre votre arbe de commit dans le README, en expliquant les choix faits surt les branches et les tags
+1. Faire apparaitre votre arbe de commit dans le README, en expliquant les choix faits sur les branches et les tags
 
 
 ### Version 1
