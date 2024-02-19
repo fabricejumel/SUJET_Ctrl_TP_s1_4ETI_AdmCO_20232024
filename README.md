@@ -3,7 +3,7 @@
 Votre rendu sera un unique dépôt Git. Vous devrez définir et justifier l'organisation des branches, l'utilisation ou non de branches `dev`, de branches liées aux fonctionnalités, de branches distinctes pour les versions, ou l'utilisation de tags.
 
 
-Testez le code `game_target_v3.py`. 
+Testez le code [game_target_v3.py](./game_target_v3.py)
 
 Pour chaque Version, vous devrez :
 
