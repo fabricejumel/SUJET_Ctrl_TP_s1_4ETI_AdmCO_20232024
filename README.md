@@ -13,8 +13,9 @@ Pour chaque Version, vous devrez :
 1. **Afficher les choix sur le code final de la classe si vous avez dû faire des changements** :  Affichez votre score et le retour de Pylint.
 2. **Associer au projet gitlab le README le plus complet possible**
 1. **Faire un gros effort sur les commentaires** : utilisez intensivement les docstrings.
-1. **Tester l'installation du paquet à partir de gitlab avec une procedure dans le README** (1).
-1. **Automatiser les phases de test et de création du .whl sur GitLab avec un fichier ci** (2).
+1. **Proposer l'installation du paquet à partir de gitlab avec une procedure dans le README**
+2.  **Proposer l'installation du paquet à partir de test pypi avec une procédure dans le README**
+1. **Automatiser les phases de test et de création du .whl sur GitLab avec un fichier ci** 
 1. Faire apparaitre votre arbre de commit dans le README, en expliquant les choix faits sur les branches et les tags
 
 
@@ -46,11 +47,13 @@ if __name__ == "__main__":
     else:
         print("Le robot n'a pas réussi à atteindre la cible dans le nombre maximum d'étapes.")
 ```
-Proposer des correctifs de ces problèmes et d'autres problème que vous auriez constaté . Il est imporrtant que tous les changements se reperercutent sur les tests unitaires . N'hésitez pas à améliorer au passage vos tests unitaires si il n'était pas suffisemment complet sur la version 1.
+Proposer des correctifs à  ces problèmes et d'autres problème que vous auriez constaté . Il est imporrtant que tous les changements se reperercutent sur les tests unitaires . N'hésitez pas à améliorer au passage vos tests unitaires si il n'était pas suffisemment complet sur la version 1.
+ (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
 
 ### Version 3
 
-On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie aléatoires , 2 autres stratégies (qui peuvent aussi ou pas comporter une part d'aléatoire). 
+On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie de base  aléatoire , 2 autres stratégies (qui peuvent aussi ou pas comporter une part  d'aléatoire). 
+ (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
 
 
 
