@@ -29,7 +29,9 @@ Pour chaque Version, vous devrez :
 
 ### Version 1 (8 points + bonus)
 
-Le but est de cette version est de mettre en forme le code donné pour en créer un package (logique setup.py ou éventuellemnt pyproject.toml) en modifiant a minima le code donné (même si il vous semble incorrect ou peu pertinent). On mettra aussi en place toute la logique de test unitaires  (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
+Le but est de cette version est de mettre en forme le code donné pour en créer un package (logique setup.py ou éventuellemnt pyproject.toml) en modifiant a minima le code donné (même si il vous semble incorrect ou peu pertinent). On mettra aussi en place toute la logique de test unitaires 
+> [!IMPORTANT]
+> on relira l'attendu précédent Pour chaque Version, vous devrez : ...
 
 ### Version 2 ( 6 points + des bonus)
 
@@ -56,12 +58,14 @@ if __name__ == "__main__":
         print("Le robot n'a pas réussi à atteindre la cible dans le nombre maximum d'étapes.")
 ```
 Proposer des correctifs à  ces problèmes et d'autres problème que vous auriez constaté . Il est imporrtant que tous les changements se reperercutent sur les tests unitaires . N'hésitez pas à améliorer au passage vos tests unitaires si il n'était pas suffisemment complet sur la version 1.
- (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
+> [!IMPORTANT]
+> on relira l'attendu précédent Pour chaque Version, vous devrez : ...
 
 ### Version 3 ( 6 points + bonus)
 
 On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie de base  aléatoire , 2 autres stratégies (qui peuvent aussi ou pas comporter une part  d'aléatoire). A vous de proposez une facon pertinente de changer quelle stratégie est utilisé, cela doit pouvoir être défini dans le "main" sans avoir à changer à la main le code des différentes classes.
- (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
+> [!IMPORTANT] 
+> on relira l'attendu précédent Pour chaque Version, vous devrez : ...
 
 
 
