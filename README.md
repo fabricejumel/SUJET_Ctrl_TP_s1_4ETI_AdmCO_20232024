@@ -5,10 +5,15 @@ Votre rendu sera un unique dépôt Git. Vous devrez définir et justifier l'orga
 
 Testez le code [game_target_v3.py](./game_target_v3.py)
 
+Dans le cas ou le sujet ne vous paraitrez pas clair ou erronné, proposez des changements en les justifiant pour pouvoir répondre aux questions .
+Même si rien ne marche, remplissez au mieux les attendus en étant clair sur ce qui marche et ce qui ne marche pas (cf la suite)
+
 Pour chaque Version, vous devrez :
 
+1.***Expliquer ce qui marche et ce qui ne marche pas***
+1 ***Joindre des copies d'écran, du résultats des scripts exécutés***
 1. **Expliquer l'usage de venv, dans votre cas, ne pas joindre de repertoire Venv dans votre git**
-2. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
+1. **Coder la ou les classes et le package associé et le déposer sur test Pypi**
 1. **Mettre en place une logique de test, le plus complet possible en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
 1. **Afficher les choix sur le code final de la classe si vous avez dû faire des changements** :  Affichez votre score et le retour de Pylint.
 2. **Associer au projet gitlab le README le plus complet possible**
@@ -52,7 +57,7 @@ Proposer des correctifs à  ces problèmes et d'autres problème que vous auriez
 
 ### Version 3
 
-On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie de base  aléatoire , 2 autres stratégies (qui peuvent aussi ou pas comporter une part  d'aléatoire). 
+On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie de base  aléatoire , 2 autres stratégies (qui peuvent aussi ou pas comporter une part  d'aléatoire). A vous de proposez une facon pertinente de changer quelle stratégie est utilisé, cela doit pouvoir être défini dans le "main" sans avoir à changer à la main le code des différentes classes.
  (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
 
 
