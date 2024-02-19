@@ -24,11 +24,11 @@ Pour chaque Version, vous devrez :
 1. Faire apparaitre votre arbre de commit dans le README, en expliquant les choix faits sur les branches et les tags
 
 
-### Version 1
+### Version 1 (8 points + bonus)
 
 Le but est de cette version est de mettre en forme le code donné pour en créer un package (logique setup.py ou éventuellemnt pyproject.toml) en modifiant a minima le code donné (même si il vous semble incorrect ou peu pertinent). On mettra aussi en place toute la logique de test unitaires  (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
 
-### Version 2
+### Version 2 ( 6 points + des bonus)
 
 Le code proposé présente beaucoup d'améliorations possibles . En particulier, le fait de modifier directement la grille (grid) sans passer par une méthode qui apporterait des sécurités est problématique . 
 Ensuite le fait que le  code suivant ne genere pas d'erreur est aussi problematique 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 Proposer des correctifs à  ces problèmes et d'autres problème que vous auriez constaté . Il est imporrtant que tous les changements se reperercutent sur les tests unitaires . N'hésitez pas à améliorer au passage vos tests unitaires si il n'était pas suffisemment complet sur la version 1.
  (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
 
-### Version 3
+### Version 3 ( 6 points + bonus)
 
 On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie de base  aléatoire , 2 autres stratégies (qui peuvent aussi ou pas comporter une part  d'aléatoire). A vous de proposez une facon pertinente de changer quelle stratégie est utilisé, cela doit pouvoir être défini dans le "main" sans avoir à changer à la main le code des différentes classes.
  (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
