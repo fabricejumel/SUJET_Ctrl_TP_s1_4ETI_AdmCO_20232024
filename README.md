@@ -20,7 +20,7 @@ Pour chaque Version, vous devrez :
 
 ### Version 1
 
-Le but est de mettre en forme le code donné pour en créer un package en modifiant a minima le code donné (même si il vous semble incorrect ou peu pertinent)
+Le but est de mettre en forme le code donné pour en créer un package (logique setup.py ou éventuellemnt pyproject.toml) en modifiant a minima le code donné (même si il vous semble incorrect ou peu pertinent). On mettra aussi en place toute la logique de test unitaires  (on relira l'attendu précédent Pour chaque Version, vous devrez : ...)
 
 ### Version 2
 
