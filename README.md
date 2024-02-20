@@ -1,74 +1,65 @@
-# SUJET_Ctrl_TP_s1_4ETI_AdmCO_20232024
-## Robot Target
+# Auteur : Martin CHARRONDIERE
 
-![Robot Target](target_m.jpg)
+Premiere version de game_target
 
-Votre rendu sera un unique dépôt Git. Vous devrez définir et justifier l'organisation des branches, l'utilisation ou non de branches `dev`, de branches liées aux fonctionnalités, de branches distinctes pour les versions, ou l'utilisation de tags.
+# Contenu du projet
 
+Package Game : Contient l'essentiel du code, module instalable avec setup.py (voir README associe)
+Dossier Images : Contient quelques images d'illustration
 
-Testez le code [game_target_v3.py](./game_target_v3.py)
+setup.py : Permet l'intsalaation du package Game en local.
 
-Dans le cas ou le sujet ne vous paraitrez peu clair ou erronné, proposez des changements en les justifiant pour pouvoir répondre aux questions .
-Même si rien ne marche, remplissez au mieux les attendus en étant clair sur ce qui marche et ce qui ne marche pas (cf la suite)
+# Principe
 
-> [!IMPORTANT] 
-> Soyez clair dans le README de votre main du rendu principal, où je dois trouver les differentes versions attendues
+Le programme principal game_target_v3.py permet de modeliser une interraction entre un robot et une cible.
+Au debut du jeu, une cible est placee aleatoirement sur une grille de 5 par 5, et le robot va evoluer sur cette meme grille jusqu'a arriver sur la case occupee par la cible. S'il y parvient en moins de 1000 tours, le robot gagne !
 
-Pour chaque Version, vous devrez :
+# Fonctionnement
 
-1. ***Expliquer ce qui marche et ce qui ne marche pas***
-1. ***Joindre des copies d'écran, du résultats des scripts exécutés***
-1. **Expliquer l'usage de venv, dans votre cas (NE PAS JOINDRE DE REPERTOIRE Venv dans votre git ou de fichiers temporaires)**
-1. **Coder la ou les classes et le package associé et les déposer sur test Pypi**
-1. **Mettre en place des tests, les plus complets possibles en utilisant unitest** : en particulier, comment gérez-vous les éventuelles erreurs ?
-1. **Afficher les choix sur le code final de la classe si vous avez dû faire des changements** :  Affichez votre score et le retour de Pylint.
-1. **Associer au projet gitlab le README le plus complet possible**
-1. **Faire un gros effort sur les commentaires** : utilisez intensivement les docstrings.
-1. **Proposer l'installation du paquet à partir de gitlab avec une procedure dans le README**
-1.  **Proposer l'installation du paquet à partir de test pypi avec une procédure dans le README**
-1. **Automatiser les phases de test et de création du .whl sur GitLab avec un fichier ci** 
-1. Faire apparaitre votre arbre de commit dans le README, en expliquant les choix faits sur les branches et les tags
+Le robot parvient systematiquement à trouver la cible, mais l'affichage ne permet pas vraiment de comprendre le principe du jeu sans en avoir lu le code prealablement. De meme, l'utilisateur n'est pas guide du tout.
 
+# Illustrations
 
-### Version 1 (8 points + bonus)
+Affichage de la grille lorsque le robot a trouve la cible (une case est alors simultanement occupee par les deux entites)
+(Images/Reussi.png)
 
-Le but est de cette version est de mettre en forme le code donné pour en créer un package (logique setup.py ou éventuellemnt pyproject.toml) en modifiant a minima le code donné (même si il vous semble incorrect ou peu pertinent). On mettra aussi en place toute la logique de test unitaires 
-> [!IMPORTANT]
-> on relira l'attendu précédent. Pour chaque Version, vous devrez : ...
+Affichage de la grille lorsque le robot et la cible sont sur deux cases differentes
+(Images/Rate.png)
 
-### Version 2 ( 6 points + des bonus)
+# Usage (eventuel) de venv
 
-Le code proposé présente beaucoup d'améliorations possibles . En particulier, le fait de modifier directement la grille (grid) sans passer par une méthode est problématique ( ce qui apporterait des sécurités) . 
-Ensuite le fait que le  code suivant ne genere pas d'erreur est aussi problematique 
-```python
-if __name__ == "__main__":
+Pas d'utilisation d'environnement virtuel dans ce ca là.
 
-    # Création de la grille et du robot
-    grid = Grid(5, 5)
-    robot = Robot(10, 10)
+# Organisation du module
 
-    # Création du jeu avec l'option d'affichage de la grille et une limite d'étapes
-    game = Game(grid, robot, max_steps=1000, show_grid=False)
+Package Game créé, contenant le programme principal game_target_v3.py ainsi que le programme test.py permettant d'effectuer une batterie de test sur le premier programme.
 
-    # Exécution des tours de jeu jusqu'à ce que le robot touche la cible ou que la limite d'étapes soit dépassée
-    while not game.run_turn():
-        pass
+# Tests & gestion des erreurs
 
-    # Vérification si le robot a atteint la cible ou non et affichage du message approprié
-    if game.target_reached:
-        print("Félicitations ! Le robot a atteint la cible en {} étapes.".format(game.steps))
-    else:
-        print("Le robot n'a pas réussi à atteindre la cible dans le nombre maximum d'étapes.")
+Mise en place des tests dans le programme test.py, du package Game.
+Aucune erreur detectee dans les tests depuis le debut.
+
+# Modifications apportees par rapport a la version precedente
+
+Aucun changement effectue par rapport au code initial,
+
+# Installation du package Game : 
+
+Dans le terminal, sous une distribution linux, entrer la commande : 
+
+```bash
+pip install /chemin/vers/votre/package/dist/nom_de_votre_package-1.0.0.tar.gz
 ```
-Proposer des correctifs à  ces problèmes et d'autres problème que vous auriez constaté . Il est imporrtant que tous les changements se reperercutent sur les tests unitaires . N'hésitez pas à améliorer au passage vos tests unitaires si il n'était pas suffisemment complet sur la version 1.
-> [!IMPORTANT]
-> on relira l'attendu précédent. Pour chaque Version, vous devrez : ...
+Pour Windows :
 
-### Version 3 ( 6 points + bonus)
+```bash
+pip install C:\chemin\vers\votre\package\dist\nom_de_votre_package-1.0.0.tar.gz
+```
 
-On souhaite définir différentes stratégies de déplacement du robot. Proposez en plus de la stratégie de base  aléatoire , 2 autres stratégies (qui peuvent aussi ou pas comporter une part  d'aléatoire). A vous de proposez une facon pertinente de changer quelle stratégie est utilisé, cela doit pouvoir être défini dans le "main" sans avoir à changer à la main le code des différentes classes.
-> [!IMPORTANT] 
-> on relira l'attendu précédent. Pour chaque Version, vous devrez : ...
+# Automatisation des phases de test
 
+Non implementee pour le moment
 
+# Structure de l'arborescence
 
+Choix fait de créer une branche develop pour ne pas poluer la branche main lors de la création de l'arborescence nécessaire à la création d'un package et de l'implémentation de nouveaux éléments (images d'illustration, batterie de test, etc...).
