@@ -42,7 +42,7 @@ class Game:
         self.robot = robot
         self.show_grid = show_grid
         self.max_steps = max_steps
-        self.steps = 0  # Nombre d'étapes pour atteindre la cible
+        self.steps = 0  # Nombre d'ï¿½tapes pour atteindre la cible
         self.place_target()
         self.target_reached = False
 
@@ -57,15 +57,15 @@ class Game:
         return False
 
     def run_turn(self):
-        # Vérifier si la cible a déjà été atteinte
+        # Vï¿½rifier si la cible a dï¿½jï¿½ ï¿½tï¿½ atteinte
         if self.target_reached:
             return True
 
-        # Vérifier si le nombre d'étapes a dépassé la limite
+        # Vï¿½rifier si le nombre d'ï¿½tapes a dï¿½passï¿½ la limite
         if self.steps >= self.max_steps:
             return False
 
-        # Déplacement du robot
+        # Dï¿½placement du robot
         direction = random.choice(['up', 'down', 'left', 'right'])
         if direction == 'up':
             self.robot.move_up(self.grid.height)
@@ -76,14 +76,14 @@ class Game:
         elif direction == 'right':
             self.robot.move_right(self.grid.width)
 
-        # Affichage de la grille après le déplacement du robot
+        # Affichage de la grille aprï¿½s le dï¿½placement du robot
         if self.show_grid:
             self.grid.clear()
             self.grid.grid[self.robot.y][self.robot.x] = 'R'
             self.grid.grid[self.target_y][self.target_x] = 'X'  
             self.grid.display()
 
-        # Vérification si le robot touche la cible
+        # Vï¿½rification si le robot touche la cible
         self.steps += 1
         if self.check_collision():
             self.target_reached = True
@@ -92,19 +92,19 @@ class Game:
 
 if __name__ == "__main__":
 
-    # Création de la grille et du robot
+    # Crï¿½ation de la grille et du robot
     grid = Grid(5, 5)
     robot = Robot(1, 1)
 
-    # Création du jeu avec l'option d'affichage de la grille et une limite d'étapes
+    # Crï¿½ation du jeu avec l'option d'affichage de la grille et une limite d'ï¿½tapes
     game = Game(grid, robot, max_steps=1000, show_grid=True)
 
-    # Exécution des tours de jeu jusqu'à ce que le robot touche la cible ou que la limite d'étapes soit dépassée
+    # Exï¿½cution des tours de jeu jusqu'ï¿½ ce que le robot touche la cible ou que la limite d'ï¿½tapes soit dï¿½passï¿½e
     while not game.run_turn():
         pass
 
-    # Vérification si le robot a atteint la cible ou non et affichage du message approprié
+    # Vï¿½rification si le robot a atteint la cible ou non et affichage du message appropriï¿½
     if game.target_reached:
-        print("Félicitations ! Le robot a atteint la cible en {} étapes.".format(game.steps))
+        print("Fï¿½licitations ! Le robot a atteint la cible en {} ï¿½tapes.".format(game.steps))
     else:
-        print("Le robot n'a pas réussi à atteindre la cible dans le nombre maximum d'étapes.")
+        print("Le robot n'a pas rï¿½ussi ï¿½ atteindre la cible dans le nombre maximum d'ï¿½tapes.")
